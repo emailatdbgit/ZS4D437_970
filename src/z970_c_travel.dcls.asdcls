@@ -1,0 +1,11 @@
+@EndUserText.label: 'Project Travel access control'
+@MappingRole: true
+define role Z970_C_TRAVEL {
+    grant
+        select
+            on
+                Z970_C_TRAVEL
+                    where
+                        inheriting conditions from entity Z970_R_TRAVEL;
+                        
+}
